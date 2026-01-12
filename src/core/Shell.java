@@ -28,6 +28,7 @@ public class Shell {
             } catch (CommandException e) {
                 System.out.println("Erro: " + e.getMessage());
             }
+            System.out.println();
         }
     }
 
