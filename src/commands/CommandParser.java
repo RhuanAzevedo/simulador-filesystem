@@ -1,7 +1,9 @@
 package commands;
 
+import commands.implementations.CdCommand;
 import commands.implementations.LsCommand;
 import commands.implementations.MkdirCommand;
+import commands.implementations.RenameCommand;
 
 import java.util.*;
 
@@ -12,8 +14,10 @@ public class CommandParser {
     public CommandParser() {
         register("mkdir", new MkdirCommand());
         register("ls", new LsCommand());
+        register("rename", new RenameCommand());
+        register("cd", new CdCommand());
         // register("touch", new TouchCommand());
-        // register("cd", new CdCommand());
+
     }
 
     public void parseAndExecute(String input, CommandContext context) throws CommandException {

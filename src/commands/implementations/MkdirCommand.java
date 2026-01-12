@@ -9,21 +9,19 @@ public class MkdirCommand implements Command {
 
     @Override
     public void execute(String[] args, CommandContext context) throws CommandException {
-
         if (args.length != 1) {
             throw new CommandException("Uso: mkdir <nome>");
         }
 
+        String name = args[0];
         Inode current = context.getCurrentDirectory();
 
         if (!current.isDirectory()) {
-            throw new CommandException("Diretório atual inválido");
+            throw new CommandException("Contexto atual inválido.");
         }
 
-        String name = args[0];
-
         if (current.asDirectory().contains(name)) {
-            throw new CommandException("Diretório já existe: " + name);
+            throw new CommandException("Não foi possível criar o diretório '" + name + "': Arquivo já existe");
         }
 
         Inode newDir = Inode.createDirectory(current);

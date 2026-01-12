@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 public class Shell {
 
+    public static final String GREEN = "\u001B[32m";
+    public static final String RESET = "\u001B[0m";
+
     public static void main(String[] args) throws CommandException {
 
         VirtualFileSystem vfs = new VirtualFileSystem();
@@ -15,7 +18,7 @@ public class Shell {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.print("> ");
+            System.out.print(GREEN + context.getCurrentPath() + RESET + " > ");
             String input = scanner.nextLine();
 
             if (input.equals("exit")) break;

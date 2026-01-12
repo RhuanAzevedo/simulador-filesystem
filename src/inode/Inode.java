@@ -47,7 +47,7 @@ public class Inode {
 
     public static Inode createDirectory(Inode parent) {
         Inode dir = new Inode(new DirectoryContent());
-        dir.asDirectory().init(parent, dir);
+        dir.asDirectory().init(dir, parent);
         return dir;
     }
 
