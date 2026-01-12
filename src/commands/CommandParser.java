@@ -14,6 +14,7 @@ public class CommandParser {
         register("rename", new RenameCommand());
         register("cd", new CdCommand());
         register("rmdir", new RmdirCommand());
+        register("touch", new TouchCommand());
 
     }
 
