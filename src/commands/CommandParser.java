@@ -1,9 +1,6 @@
 package commands;
 
-import commands.implementations.CdCommand;
-import commands.implementations.LsCommand;
-import commands.implementations.MkdirCommand;
-import commands.implementations.RenameCommand;
+import commands.implementations.*;
 
 import java.util.*;
 
@@ -16,7 +13,7 @@ public class CommandParser {
         register("ls", new LsCommand());
         register("rename", new RenameCommand());
         register("cd", new CdCommand());
-        // register("touch", new TouchCommand());
+        register("rmdir", new RmdirCommand());
 
     }
 
