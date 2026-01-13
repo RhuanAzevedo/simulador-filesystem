@@ -27,6 +27,7 @@ public class Shell {
             String input = scanner.nextLine();
 
             if (input.equals("exit")) break;
+            context.addHistory(input);
 
             try {
                 parser.parseAndExecute(input, context);

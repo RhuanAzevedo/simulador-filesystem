@@ -4,18 +4,23 @@ import core.VirtualFileSystem;
 import inode.Inode;
 import inode.content.DirectoryContent;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.List;
 
 public class CommandContext {
 
     private final VirtualFileSystem vfs;
     private Inode currentDirectory;
     private final LinkedList<String> pathStack;
+    private final List<String> history;
 
     public CommandContext(VirtualFileSystem vfs) {
         this.vfs = vfs;
         this.currentDirectory = vfs.getRoot();
         this.pathStack = new LinkedList<>();
+        this.history = new ArrayList<>();
     }
 
     // --- Getters básicos ---
@@ -54,6 +59,16 @@ public class CommandContext {
 
     public void setCurrentDirectory(Inode dir) {
         this.currentDirectory = dir;
+    }
+
+    public void addHistory(String command) {
+        if (command != null && !command.isBlank()) {
+            history.add(command);
+        }
+    }
+
+    public List<String> getHistory() {
+        return Collections.unmodifiableList(history);
     }
 
     // Metodo Utilitário para achar caminhos.

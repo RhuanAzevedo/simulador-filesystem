@@ -15,18 +15,28 @@ public class CommandParser {
         register("cd", new CdCommand());
         register("chmod", new ChmodCommand());
         register("chown", new ChownCommand());
+        register("cp", new CpCommand());
+        register("diff", new DiffCommand());
+        register("du", new DuCommand());
         register("echo", new EchoCommand());
+        register("find", new FindCommand());
+        register("grep", new GrepCommand());
         register("head",  new HeadCommand());
+        register("history", new HistoryCommand());
         register("ls", new LsCommand());
         register("mkdir", new MkdirCommand());
+        register("mv", new MvCommand());
         register("pwd", new  PwdCommand());
         register("rename", new RenameCommand());
         register("rm", new RmCommand());
         register("rmdir", new RmdirCommand());
+        register("stat", new StatCommand());
         register("tail", new TailCommand());
         register("touch", new TouchCommand());
         register("tree",  new TreeCommand());
+        register("unzip", new UnzipCommand());
         register("wc", new WcCommand());
+        register("zip", new ZipCommand());
     }
 
     public void parseAndExecute(String input, CommandContext context) throws CommandException {
