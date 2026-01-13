@@ -19,6 +19,7 @@ public class CommandParser {
         register("touch", new TouchCommand());
         register("pwd", new  PwdCommand());
         register("echo", new EchoCommand());
+        register("cat", new CatCommand());
 
     }
 
