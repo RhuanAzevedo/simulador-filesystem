@@ -3,6 +3,8 @@ package commands;
 import commands.implementations.*;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class CommandParser {
 
@@ -24,7 +26,19 @@ public class CommandParser {
         if (input == null || input.isBlank()) return;
 
         // cada parte do comando é separada em tokens
-        String[] tokens = input.trim().split("\\s+");
+        List<String> rawTokens = new ArrayList<>();
+        Matcher matcher = Pattern.compile("\"([^\"]*)\"|(\\S+)").matcher(input);
+        while (matcher.find()) {
+            if (matcher.group(1) != null) {
+                rawTokens.add(matcher.group(1)); // Conteúdo entre aspas
+            } else {
+                rawTokens.add(matcher.group(2)); // Palavra normal
+            }
+        }
+        String[] tokens = rawTokens.toArray(new String[0]);
+
+        if (tokens.length == 0) return; // Proteção extra caso o regex não encontre nada
+
         // o primeiro token representa o nome do comando
         String name = tokens[0];
         // o restante dos tokens sao argumentos, que variam de comando para comando
@@ -33,7 +47,7 @@ public class CommandParser {
         // a insancia da classe correspondente ao comenado, mapeada no construtor e acessada
         Command command = commands.get(name);
 
-        if (command == null) { // caso o comando nao tenha sido previamente mapeado, é lançada uma excess�o
+        if (command == null) { // caso o comando nao tenha sido previamente mapeado, é lançada uma exceção
             throw new CommandException("Comando não encontrado: " + name);
         }
 
