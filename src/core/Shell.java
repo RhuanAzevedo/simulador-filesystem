@@ -17,6 +17,11 @@ public class Shell {
 
         Scanner scanner = new Scanner(System.in);
 
+        // inicia o usuário no diretório "/home/user"
+        String startup = "cd home/user";
+        parser.parseAndExecute(startup, context);
+
+        // Inicia a captação dos comandos
         while (true) {
             System.out.print(GREEN + context.getCurrentPath() + RESET + " > ");
             String input = scanner.nextLine();
