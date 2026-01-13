@@ -16,6 +16,20 @@ public class MkdirCommand implements Command {
         String name = args[0];
         Inode current = context.getCurrentDirectory();
 
+        if(name.contains("/")){
+            String[] splitName = name.split("/");
+            String path = "";
+            for(int i = 0; i < splitName.length-1; i++){
+                path += splitName[i]+"/";
+            }
+            if(context.resolvePath(path) != null && context.resolvePath(path).isDirectory()){
+                current = context.resolvePath(path);
+            }else {
+                throw new CommandException("Caminho inexistente.");
+            }
+            name = splitName[splitName.length-1];
+        }
+
         if (!current.isDirectory()) {
             throw new CommandException("Contexto atual inválido.");
         }
