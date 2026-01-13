@@ -18,6 +18,7 @@ public class CommandParser {
         register("rmdir", new RmdirCommand());
         register("touch", new TouchCommand());
         register("pwd", new  PwdCommand());
+        register("echo", new EchoCommand());
 
     }
 
