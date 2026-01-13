@@ -15,6 +15,7 @@ public class CommandParser {
         register("cd", new CdCommand());
         register("rmdir", new RmdirCommand());
         register("touch", new TouchCommand());
+        register("pwd", new  PwdCommand());
 
     }
 
