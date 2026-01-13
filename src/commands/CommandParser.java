@@ -11,15 +11,19 @@ public class CommandParser {
     private final Map<String, Command> commands = new HashMap<>();
 
     public CommandParser() {
-        register("mkdir", new MkdirCommand());
-        register("ls", new LsCommand());
-        register("rename", new RenameCommand());
+        register("cat", new CatCommand());
         register("cd", new CdCommand());
+        register("chmod", new ChmodCommand());
+        register("chown", new ChownCommand());
+        register("echo", new EchoCommand());
+        register("ls", new LsCommand());
+        register("mkdir", new MkdirCommand());
+        register("pwd", new  PwdCommand());
+        register("rename", new RenameCommand());
+        register("rm", new RmCommand());
         register("rmdir", new RmdirCommand());
         register("touch", new TouchCommand());
-        register("pwd", new  PwdCommand());
-        register("echo", new EchoCommand());
-        register("cat", new CatCommand());
+        register("tree",  new TreeCommand());
 
     }
 
