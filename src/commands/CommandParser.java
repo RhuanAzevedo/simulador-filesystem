@@ -16,12 +16,14 @@ public class CommandParser {
         register("chmod", new ChmodCommand());
         register("chown", new ChownCommand());
         register("echo", new EchoCommand());
+        register("head",  new HeadCommand());
         register("ls", new LsCommand());
         register("mkdir", new MkdirCommand());
         register("pwd", new  PwdCommand());
         register("rename", new RenameCommand());
         register("rm", new RmCommand());
         register("rmdir", new RmdirCommand());
+        register("tail", new TailCommand());
         register("touch", new TouchCommand());
         register("tree",  new TreeCommand());
 
