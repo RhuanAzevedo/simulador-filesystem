@@ -26,7 +26,7 @@ public class CommandParser {
         register("tail", new TailCommand());
         register("touch", new TouchCommand());
         register("tree",  new TreeCommand());
-
+        register("wc", new WcCommand());
     }
 
     public void parseAndExecute(String input, CommandContext context) throws CommandException {
