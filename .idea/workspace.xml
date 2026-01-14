@@ -4,57 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49f51b56-31c3-4cc8-b7af-4f6b75d724f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filesystem.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/CommandContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CommandContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/CommandException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CommandException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/CommandParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CommandParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/CommandUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CommandUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/CatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/CatCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/CdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/CdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/ChmodCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/ChmodCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/ChownCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/ChownCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/CpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/CpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/DiffCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/DiffCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/DuCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/DuCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/EchoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/EchoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/FindCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/FindCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/GrepCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/GrepCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/HeadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/HeadCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/HistoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/HistoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/LsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/LsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/MkdirCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/MkdirCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/MvCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/MvCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/PwdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/PwdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/RenameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/RenameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/RmCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/RmCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/RmdirCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/RmdirCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/StatCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/StatCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/TailCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/TailCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/TouchCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/TouchCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/TreeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/TreeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/UnzipCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/UnzipCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/WcCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/WcCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/implementations/ZipCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/implementations/ZipCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/Shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/Shell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/VirtualFileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/VirtualFileSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inode/Inode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inode/Inode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inode/PermissionBits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inode/PermissionBits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inode/Permissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inode/Permissions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inode/content/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inode/content/Content.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inode/content/DirectoryContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inode/content/DirectoryContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inode/content/FileContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inode/content/FileContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inode/enums/ContentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/inode/enums/ContentType.java" afterDir="false" />
-    </list>
+    <list default="true" id="49f51b56-31c3-4cc8-b7af-4f6b75d724f2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768362520067</updated>
-      <workItem from="1768362521951" duration="1848000" />
+      <workItem from="1768362521951" duration="2320000" />
     </task>
     <servers />
   </component>
