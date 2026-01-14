@@ -8,6 +8,18 @@ O objetivo é simular um sistema de arquivos estilo Unix/Linux operando inteiram
 
 O sistema foi projetado utilizando Programação Orientada a Objetos (POO) em Java, adotando padrões de projeto como **Command Pattern** para a execução de operações e **Composite/Strategy** para a estrutura de dados dos arquivos.
 
+### Como executar o projeto (habilitar history com setas)
+
+Para executar o projeto com o emulador de terminal ativo, abra uma janela do shell no caminho do projeto e digite o seguinte comando:
+- Na primeira execução:
+```cmd
+.\mvnw clean compile exec:java
+```
+- Demais execuções:
+```cmd
+.\mvnw exec:java
+```
+
 ### Como funciona o `Inode`?
 
 Inspirado nos sistemas de arquivos Unix, a estrutura central deste projeto é o **Inode**.
