@@ -20,6 +20,16 @@ Para executar o projeto com o emulador de terminal ativo, abra uma janela do she
 .\mvnw exec:java
 ```
 
+Caso a execução falhe com a seguinte mensagem de erro
+```cmd
+The JAVA_HOME environment variable is not defined correctly 
+```
+
+Execute o seguinte comando antes de executar o programa:
+```cmd
+$env:JAVA_HOME = "C:\Program Files\Java\jdk-23"
+```
+
 ### Como funciona o `Inode`?
 
 Inspirado nos sistemas de arquivos Unix, a estrutura central deste projeto é o **Inode**.
